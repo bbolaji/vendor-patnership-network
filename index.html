@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Partnership Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vendor Partnership Form</h1>
+        <p>Partner with us and enjoy numerous benefits including expanded market reach, reliable logistics solutions, and enhanced business growth.</p>
+        <form id="partnershipForm" action="submit_form.php" method="POST">
+            <div class="form-group">
+                <label for="vendorName">Vendor Name:</label>
+                <input type="text" id="vendorName" name="vendorName" required>
+            </div>
+            <div class="form-group">
+                <label for="vendorEmail">Vendor Email:</label>
+                <input type="email" id="vendorEmail" name="vendorEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="vendorPhone">Vendor Phone:</label>
+                <input type="tel" id="vendorPhone" name="vendorPhone" required>
+            </div>
+            <div class="form-group">
+                <label for="companyName">Company Name:</label>
+                <input type="text" id="companyName" name="companyName" required>
+            </div>
+            <div class="form-group">
+                <label for="companyAddress">Company Address:</label>
+                <textarea id="companyAddress" name="companyAddress" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="companyWebsite">Company Website:</label>
+                <input type="url" id="companyWebsite" name="companyWebsite">
+            </div>
+            <div class="form-group">
+                <h2>Benefits of Partnering with Us:</h2>
+                <ul>
+                    <li>Expanded Market Reach</li>
+                    <li>Reliable Logistics Solutions</li>
+                    <li>Enhanced Business Growth</li>
+                    <li>Access to Cutting-edge Technology</li>
+                    <li>24/7 Customer Support</li>
+                </ul>
+            </div>
+            <div class="form-group">
+                <label for="agreement">Do you agree to the partnership terms and conditions?</label>
+                <select id="agreement" name="agreement" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
